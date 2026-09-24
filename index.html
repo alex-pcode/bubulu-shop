@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bubulu — Ručno pravljene kapice i dekoracije za dečje proslave</title>
+<meta name="description" content="Bubulu: ručno pravljene slavljeničke kapice, krunice, čarobni štapići, toperi, girlande, platna i šolje. Za vaše divne dane.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pinyon+Script&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f8f2ea; --paper:#fffcf7; --linen:#efe5d8; --pill:#e6d6c4; --plum:#5a2a27; --plum-2:#7b4640;
+  --ink:#3b2a24; --muted:#86736a; --line:#e8dccd; --blush:#efd8cf; --sage:#d3dac8; --blue:#d6e1e8; --red:#b3322f;
+  --radius:4px; --shadow:0 24px 50px -30px rgba(90,42,39,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Jost",system-ui,sans-serif;font-weight:300;background:var(--cream);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.05;color:var(--plum);letter-spacing:.005em}
+.script{font-family:"Pinyon Script",cursive;font-weight:400;color:var(--plum-2);line-height:1}
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.pill{display:inline-block;background:var(--pill);color:var(--plum);font-family:"Cormorant Garamond",serif;font-style:italic;font-size:17px;letter-spacing:.06em;padding:3px 14px;border-radius:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;padding:15px 30px;font-weight:500;font-size:13px;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--plum);transition:background .2s,color .2s}
+.btn-dark{background:var(--plum);color:var(--paper)}
+.btn-dark:hover{background:var(--plum-2);border-color:var(--plum-2)}
+.btn-ghost{color:var(--plum)}
+.btn-ghost:hover{background:var(--plum);color:var(--paper)}
+.link{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--plum);border-bottom:1px solid currentColor;padding-bottom:2px}
+
+.announce{background:var(--plum);color:#f3e6dc;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:10px 16px}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(248,242,234,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:84px;gap:24px}
+nav.main{display:flex;gap:28px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:400}
+nav.main a:hover{color:var(--plum)}
+nav.right{justify-content:flex-end}
+.logo{display:flex;flex-direction:column;align-items:center}
+.logo img{height:46px;width:auto}
+.logo small{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:12px;letter-spacing:.2em;color:var(--muted);margin-top:-2px}
+.icons{display:flex;gap:18px;align-items:center;justify-content:flex-end}
+.icon-btn{position:relative;display:grid;place-items:center;width:36px;height:36px}
+.icon-btn svg{width:20px;height:20px;stroke:var(--plum);fill:none;stroke-width:1.4}
+.badge{position:absolute;top:0;right:-4px;background:var(--plum);color:#fff;font-size:10px;min-width:17px;height:17px;border-radius:9px;display:grid;place-items:center}
+.menu-btn{display:none}
+
+/* hero */
+.hero{padding:64px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:center}
+.hero .script{font-size:clamp(44px,5vw,64px);display:block;margin-bottom:6px}
+.hero h1{font-size:clamp(46px,5.4vw,76px);font-weight:400}
+.hero h1 em{font-style:italic}
+.hero .lead{font-size:18px;color:var(--muted);max-width:36ch;margin:24px 0 36px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-art{position:relative;padding:0 0 60px 60px}
+.hero-art .main{aspect-ratio:4/5;overflow:hidden;box-shadow:var(--shadow)}
+.hero-art .main img{width:100%;height:100%;object-fit:cover}
+.hero-art .mini{position:absolute;left:0;bottom:0;width:40%;aspect-ratio:3/4;overflow:hidden;border:10px solid var(--cream);box-shadow:var(--shadow)}
+.hero-art .mini img{width:100%;height:100%;object-fit:cover}
+.hero-art .note{position:absolute;right:-18px;top:36px;background:var(--paper);padding:16px 20px;box-shadow:var(--shadow);max-width:210px;font-size:14px;color:var(--muted)}
+.hero-art .note b{display:block;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:22px;color:var(--plum);line-height:1.1;margin-bottom:4px}
+
+section.block{padding:110px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 56px}
+.sec-head .script{font-size:52px;display:block}
+.sec-head h2{font-size:clamp(36px,4.2vw,54px);font-weight:400;margin-top:4px}
+.sec-head p{color:var(--muted);margin-top:14px}
+
+/* caps */
+.caps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.cap{display:flex;flex-direction:column;gap:14px}
+.cap .media{aspect-ratio:3/4;overflow:hidden;background:var(--linen)}
+.cap img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.cap:hover img{transform:scale(1.05)}
+.cap h3{font-size:25px}
+.cap p{font-size:14px;color:var(--muted)}
+.cap .price{font-family:"Cormorant Garamond",serif;font-size:21px;color:var(--plum)}
+.caps-foot{text-align:center;margin-top:48px}
+
+/* party categories */
+.party{background:var(--paper);border-block:1px solid var(--line)}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.cat{background:var(--paper);padding:30px 26px;display:flex;flex-direction:column;gap:8px;transition:background .2s}
+.cat:hover{background:var(--cream)}
+.cat .pill{align-self:flex-start;font-size:15px}
+.cat h3{font-size:26px;margin-top:6px}
+.cat p{font-size:14px;color:var(--muted);flex:1}
+.cat .from{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--plum)}
+
+/* split features */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.split.rev .art{order:2}
+.split .art{position:relative}
+.split .art img{width:100%;aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow)}
+.split .art .tag{position:absolute;bottom:24px;right:-20px;background:var(--plum);color:var(--paper);padding:16px 22px;font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.1}
+.split .art .tag small{display:block;font-family:"Jost",sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.8;margin-top:4px}
+.split h2{font-size:clamp(36px,4.2vw,56px);font-weight:400;margin:8px 0 20px}
+.split .script{font-size:46px}
+.split p{color:var(--muted);max-width:46ch}
+.list{list-style:none;margin:26px 0 34px;display:grid;gap:12px}
+.list li{display:flex;justify-content:space-between;gap:20px;border-bottom:1px dotted var(--pill);padding-bottom:10px}
+.list li span{color:var(--ink)}
+.list li b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:19px;color:var(--plum);white-space:nowrap}
+
+/* mugs */
+.mugs{background:var(--blue)}
+.mug-grid{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:14px;aspect-ratio:1/1}
+.mug-grid div{overflow:hidden;min-height:0}
+.mug-grid img{width:100%;height:100%;object-fit:cover}
+.mug-grid .a{grid-row:span 2}
+.promo{display:inline-block;background:var(--paper);color:var(--plum);padding:6px 14px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;margin-bottom:6px}
+
+/* story */
+.story{text-align:center;padding:130px 0;background:var(--linen)}
+.story blockquote{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(32px,4vw,54px);line-height:1.2;color:var(--plum);max-width:22ch;margin:18px auto 28px}
+.story p{max-width:60ch;margin:0 auto;color:var(--muted);font-size:17px}
+.story .sig{margin-top:30px}
+.story .sig img{height:54px;margin:0 auto}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.review{background:var(--paper);border:1px solid var(--line);padding:30px 28px 24px;display:flex;flex-direction:column;gap:18px}
+.review p{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;line-height:1.35;color:var(--ink);flex:1}
+.review .who{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-top:1px dotted var(--pill);padding-top:14px;font-size:13px}
+.review .who b{font-weight:500;color:var(--plum)}
+.review .who span{color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-size:11px}
+.reviews-note{text-align:center;margin-top:28px;font-size:13px;color:var(--muted)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.gallery a{aspect-ratio:3/4;overflow:hidden;display:block}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery a:hover img{transform:scale(1.06)}
+
+/* how to order */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:s}
+.step{border-top:1px solid var(--plum);padding-top:22px}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--pill);line-height:1;display:block;margin-bottom:12px}
+.step b{display:block;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:23px;color:var(--plum);margin-bottom:6px}
+.step p{font-size:14px;color:var(--muted)}
+.notes{margin-top:56px;background:var(--paper);border:1px solid var(--line);padding:36px 40px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:start}
+.notes .script{font-size:42px}
+.notes ul{list-style:none;display:grid;gap:10px;color:var(--muted);font-size:15px}
+.notes li::before{content:"✦";color:var(--pill);margin-right:10px}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:22px 0;overflow:hidden}
+summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:500;color:var(--plum);display:grid;grid-template-columns:1fr auto;gap:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:"Jost";font-weight:300;font-size:26px;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:10px;max-width:64ch}
+
+footer{background:var(--plum);color:#e9d9cf;padding:80px 0 30px;margin-top:0}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:56px}
+footer .flogo img{height:56px;filter:brightness(0) invert(.93) sepia(.15)}
+footer h4{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:21px;color:#fff;margin-bottom:12px}
+footer li{list-style:none;margin:7px 0;font-size:14px}
+footer li a:hover{color:#fff}
+footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:22px;display:flex;justify-content:space-between;font-size:12px;letter-spacing:.1em;opacity:.7;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1024px){
+  .caps,.cats{grid-template-columns:repeat(2,1fr)}
+  .reviews{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  nav.main{display:none}
+  .menu-btn{display:grid}
+  header.site .wrap{grid-template-columns:auto 1fr;height:72px}
+  .logo{align-items:flex-start}
+  .logo img{height:38px}
+  .hero .wrap,.split{grid-template-columns:1fr;gap:44px}
+  .hero{padding-top:28px}
+  .hero-art{order:-1;padding:0 0 44px 44px;max-width:520px}
+  .hero-art .note{right:0;top:20px}
+  .split.rev .art{order:0}
+  .split .art .tag{right:12px}
+  .mug-grid{aspect-ratio:auto;grid-template-rows:auto}
+  .mug-grid .a{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+  .mug-grid div:not(.a){aspect-ratio:1}
+  .notes{grid-template-columns:1fr;padding:28px 24px;gap:10px}
+  section.block{padding:72px 0}
+  .story{padding:80px 0}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .caps{gap:18px 12px}
+  .cap h3{font-size:21px}
+  .cats{grid-template-columns:1fr}
+  .reviews{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .hero-art .note{display:none}
+  .list li{font-size:14px}
+  footer .cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">Ručno pravljeno u Bubulu radionici · Lično preuzimanje u Kragujevcu · Šolje 5+1 gratis</div>
+
+<header class="site">
+  <div class="wrap">
+    <nav class="main" aria-label="Glavna navigacija">
+      <a href="kapica.html">Kapice</a>
+      <a href="#proslava">Proslava</a>
+      <a href="#solje">Šolje</a>
+    </nav>
+    <a class="logo" href="index.html"><img src="img/logo-bubulu.png" alt="Bubulu"><small>za vaše divne dane</small></a>
+    <div class="icons">
+      <nav class="main" aria-label="Pomoć"><a href="#utisci">Utisci</a><a href="#porucivanje">Kako poručiti</a></nav>
+      <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge">0</span></a>
+      <button class="icon-btn menu-btn" aria-label="Meni" style="background:none;border:0"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="script">za vaše divne dane</span>
+      <h1>Ručno pravljene kapice, krunice i <em>čarobni štapići</em></h1>
+      <p class="lead">Za mađioničare, vile, prinčeve i princeze. Sve što treba da najobičnija torta i najobičniji dan postanu najposebniji.</p>
+      <div class="ctas">
+        <a class="btn btn-dark" href="kapica.html">Izaberi kapicu</a>
+        <a class="link" href="#proslava">Sve za proslavu</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="main"><img src="img/DdDx5vtCMXy.jpg" alt="Kremasti sto za rođendan sa Bubulu kapicama, zvezdicama i zečićima"></div>
+      <div class="mini"><img src="img/Dammua6CK0y.jpg" alt="Bubulu kapica sa crvenim srcem i nabranim karnerom"></div>
+      <div class="note"><b>Iz greške se rađaju najlepši proizvodi</b>Svaki komad nastaje u Bubulu radionici, ručno.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="script">Kapice</span>
+      <h2>Četiri vrste, jedna za svaki rođendan</h2>
+      <p>Od klasične kapice sa pomponom od vunice do kapice sa dezenom koji štampamo baš za vašu proslavu.</p>
+    </div>
+    <div class="caps">
+      <a class="cap" href="kapica.html?model=klasicna"><div class="media"><img src="img/kap-klasicna.jpg" alt="Klasična kapica sa karner mint i pomponom"></div><h3>Klasična</h3><p>Pamučni karner oko 2 cm i pompon od vunice ili tila.</p><span class="price">1.800 din</span></a>
+      <a class="cap" href="kapica.html?model=karner"><div class="media"><img src="img/kap-veliki-karner.jpg" alt="Kapica sa velikim nabranim karnerom"></div><h3>Veliki karner</h3><p>Gusto nabran karner od pamuka, tila ili muslina, oko 4 cm.</p><span class="price">2.100 din</span></a>
+      <a class="cap" href="kapica.html?model=dodaci"><div class="media"><img src="img/kap-broj.jpg" alt="Kapica sa brojem 1 i zvezdicama"></div><h3>Sa dodacima</h3><p>Ime, broj, srca ili zvezdice, ili osnova presvučena tilom.</p><span class="price">2.300 din</span></a>
+      <a class="cap" href="kapica.html?model=stampani"><div class="media"><img src="img/kap-stampani.jpg" alt="Kapica sa štampanim cvetnim dezenom i karnerom boje cigle"></div><h3>Štampani dezen</h3><p>Dezen koji zajedno osmislimo i štampamo na krem pamuku.</p><span class="price">2.700 din</span></a>
+    </div>
+    <div class="caps-foot"><a class="btn btn-ghost" href="kapica.html">Napravi svoju kapicu</a></div>
+  </div>
+</section>
+
+<section class="block party" id="proslava">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="script">Proslava</span>
+      <h2>Sve što treba za najnezaboravniji rođendan</h2>
+    </div>
+    <div class="cats">
+      <div class="cat"><span class="pill">Toperi</span><h3>Papirni toperi i girlande</h3><p>Klasični set od 10ak topera na temu, mini set sa brojem i zastavicom ili carousel set sa konjićima.</p><span class="from">od 1.700 din</span></div>
+      <div class="cat"><span class="pill">Toperi</span><h3>Platneni toperi i svećice</h3><p>Tri zastavice sa kratkim natpisom po izboru, svećica sa mašnicom od pamuka ili satena.</p><span class="from">od 1.200 din</span></div>
+      <div class="cat"><span class="pill">Girlande</span><h3>Platnene girlande</h3><p>Cepkane tračice u bojama po želji, sa brojem ili natpisom, ili klasični trouglići.</p><span class="from">od 2.000 din</span></div>
+      <div class="cat"><span class="pill">Platna</span><h3>Platna dobrodošlice</h3><p>Od krem pamuka ili belog muslina, bilo koje veličine i sa tekstom po vašem izboru.</p><span class="from">od 2.500 din</span></div>
+      <div class="cat"><span class="pill">Kostimi</span><h3>Krunice i čarobni štapići</h3><p>Krunice od pamuka ili pliša, sa natpisom ili tilom, i štapići sa zvezdicom ili pomponom.</p><span class="from">od 1.000 din</span></div>
+      <div class="cat"><span class="pill">Kostimi</span><h3>Kragnice i plaštovi</h3><p>Jednoslojne i dvoslojne kragnice, plaštovi od višeslojnog tila, i set kapica i kragnica za medu.</p><span class="from">od 2.500 din</span></div>
+      <div class="cat"><span class="pill">Igra</span><h3>Pozorište</h3><p>75×170 cm, sa šipkom za štok vrata i pričicom na štapićima na poklon. Crveno, roze, plavo, krem ili oker.</p><span class="from">12.000 din</span></div>
+      <div class="cat"><span class="pill">Igra</span><h3>Kućice za sto i podni jastuci</h3><p>Kućica koja od stola pravi skrovište, i jastuci od pamuka ili tedi materijala.</p><span class="from">od 4.500 din</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap split">
+    <div class="art"><img src="img/DZUQ6RvCG3w.jpg" alt="Rođendan u dvorištu sa Bubulu platnom, kućicom za sto i pozorištem"><div class="tag">−10% na celu porudžbinu<small>uz rođendanski set</small></div></div>
+    <div>
+      <span class="script">Rođendan napolju</span>
+      <h2>Dvorište, šuma ili park</h2>
+      <p>Platno dobrodošlice, kućica za sto na kome će se kasnije duvati svećice i pozorište su sve što je potrebno da se organizuje najnezaboravniji rođendan. Kapice, girlandice i toperi su šlag na torti.</p>
+      <ul class="list">
+        <li><span>Pamučno platno 50×100 cm</span><b>3.500 din</b></li>
+        <li><span>Kućica za sto 260×220 cm</span><b>7.000 din</b></li>
+        <li><span>Pozorište 75×170 cm</span><b>12.000 din</b></li>
+      </ul>
+      <p style="font-size:14px">Uz rođendanski set (platno, kućica i pozorište) dobijate 10% popusta na celu porudžbinu.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap split rev">
+    <div class="art"><img src="img/DJ2MboVMQAi.jpg" alt="Mini set topera sa brojem 1 na bento torti"><div class="tag">Uvek dostupni<small>20 mini setova</small></div></div>
+    <div>
+      <span class="script">Mini setovi</span>
+      <h2>Za cake smash i rođendan na moru</h2>
+      <p>Mini setovi pretvaraju najobičniju tortu, parče torte ili voćnu salatu u najposebniju. Laki su za put, a uvek su odmah dostupni.</p>
+      <ul class="list">
+        <li><span>Zastavica: Happy birthday, Make a wish, Srećan rođendan ili Срећан рођендан</span></li>
+        <li><span>Broj, baš onaj koji vam treba</span></li>
+        <li><span>Toperi sa likovima i svećica</span></li>
+      </ul>
+      <ul class="list" style="margin-top:0">
+        <li><span>Set od pet i više delova</span><b>1.500 din</b></li>
+        <li><span>Set od četiri dela</span><b>1.300 din</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block mugs" id="solje">
+  <div class="wrap split">
+    <div class="mug-grid">
+      <div class="a"><img src="img/DdUMqXDCKhZ.jpg" alt="Jesenje Bubulu šoljice sa guskom, lisicom i prasetom"></div>
+      <div><img src="img/DXe8YWsCBF2.jpg" alt="Šolja sa prugama i srcem"></div>
+      <div><img src="img/DcjjOEmiCYu.jpg" alt="Personalizovane šolje za đake prvake"></div>
+    </div>
+    <div>
+      <span class="promo">Trajna akcija 5+1 gratis</span>
+      <h2>Za dečje mleko ili maminu kafu</h2>
+      <p>Šolje su toliko slatke da ćete ih sigurno pozajmljivati jedni od drugih. Rade se po kolekcijama, a svaka može da se personalizuje.</p>
+      <ul class="list">
+        <li><span>Klasična šolja, 180 ml</span><b>1.000 din</b></li>
+        <li><span>Personalizovana šolja</span><b>1.200 din</b></li>
+        <li><span>Sme u mašinu za sudove</span><b>✓</b></li>
+      </ul>
+      <a class="btn btn-dark" href="https://www.instagram.com/bubulu___/" target="_blank" rel="noopener">Pogledaj kolekcije</a>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <span class="eyebrow">Bubulu radionica</span>
+    <blockquote>„U Bubulu radionici se iz greške rađaju najlepši proizvodi.“</blockquote>
+    <p>Na jednu kapicu sam zaboravila da treba da ide broj. Osnova je bila u dezenu, karner i pompon izabrani, i onda: „hoće li pisati broj?“. Ostavila sam da mi se slegne, i opet BUM: zakrpa je rešenje! Tako je nastala najslađa kapica ikada. Jako volim ovaj posao jer obožavam tu spontanost i buđenje novih ideja.</p>
+    <div class="sig"><img src="img/logo-bubulu.png" alt="Bubulu"></div>
+  </div>
+</section>
+
+<section class="block" id="utisci">
+  <div class="wrap">
+    <div class="sec-head"><span class="script">Vi i Bubulu</span><h2>Kad Bubulu stigne kod vas</h2><p>Reči mama i fotografa koji su Bubulu kapice, krunice i zeke podelili u svojim pričama.</p></div>
+    <div class="reviews">
+      <div class="review"><p>„Tek je stiglo, a već je isprobano 😍🙈“</p><div class="who"><b>Jelena</b><span>krunica i plašt</span></div></div>
+      <div class="review"><p>„Ova divna kapica je danas bila spremna za jedan cake smash, ali bebač nije bio raspoložen da je stavi pa čeka naredno fotkanje…“</p><div class="who"><b>@vitorinophotography</b><span>kapica</span></div></div>
+      <div class="review"><p>„Inače ovakve kapice i za dečake i za devojčice vas od sl. nedelje čekaju kod nas.“</p><div class="who"><b>@noas.photo</b><span>kapice za fotografisanje</span></div></div>
+      <div class="review"><p>„Što se tiče kapice za koju je puno vas pitalo, uradili smo je kod Bubulu! Uradila nam je kapicu po našoj želji, baš kako smo zamislili! Ima toliko divnih modela kapica i kragnica koje prate stil kapice da sam ja oduševljena…“</p><div class="who"><b>Aleksandra</b><span>kapica po želji</span></div></div>
+      <div class="review"><p>„Već uživa u šetnji pored reke 😊 … Vodim ga kući ❤️“</p><div class="who"><b>Jovana</b><span>uskršnji zeka</span></div></div>
+      <div class="review"><p>„Rekviziti spremni. Mislila sam da već sledeće nedelje krenem sa Uskršnjim fotkanjem, a javljaju sneg... I tako... 🥲“</p><div class="who"><b>@ivabanovic.photography</b><span>uskršnji zeka</span></div></div>
+    </div>
+    <p class="reviews-note">Iz Instagram priča koje ste podelili sa nama, sačuvanih u highlight-u „Vi i Bubulu“.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head"><span class="script">Divni dani</span><h2>Rođendani, krštenja i prvi školski dan</h2></div>
+    <div class="gallery">
+      <a href="https://www.instagram.com/p/Da-DwW8iNGy/" target="_blank" rel="noopener"><img src="img/Da-DwW8iNGy.jpg" alt="Letnja žurka sa Bubulu pozorištem"></a>
+      <a href="https://www.instagram.com/p/Dbv9azmiFrN/" target="_blank" rel="noopener"><img src="img/Dbv9azmiFrN.jpg" alt="Platno za krštenje"></a>
+      <a href="https://www.instagram.com/p/Db0J8Y4iO6S/" target="_blank" rel="noopener"><img src="img/Db0J8Y4iO6S.jpg" alt="Kapice za lutke"></a>
+      <a href="https://www.instagram.com/p/DbKw7OcCDWC/" target="_blank" rel="noopener"><img src="img/DbKw7OcCDWC.jpg" alt="Azbuka i krunica za đaka prvaka"></a>
+      <a href="https://www.instagram.com/p/DdmGBTciKch/" target="_blank" rel="noopener"><img src="img/DdmGBTciKch.jpg" alt="Rođendansko platno za Matea"></a>
+      <a href="https://www.instagram.com/p/DayJ96PiDpR/" target="_blank" rel="noopener"><img src="img/DayJ96PiDpR.jpg" alt="Ručno rađene zahvalnice"></a>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0" id="porucivanje">
+  <div class="wrap">
+    <div class="sec-head"><span class="script">Poručivanje</span><h2>Kako do vaše Bubulu proslave</h2></div>
+    <div class="steps">
+      <div class="step"><b>Izaberite</b><p>Model kapice, set topera ili dekoraciju. Cene su iste kao u našem vodiču za poručivanje.</p></div>
+      <div class="step"><b>Opišite želje</b><p>Boje, temu, ime ili broj. Ako želite tačnu nijansu, pošaljite fotografiju nečega u toj boji.</p></div>
+      <div class="step"><b>Rezervišite termin</b><p>Porudžbine primamo po mesecima, pa je najbolje javiti se na vreme pred proslavu.</p></div>
+      <div class="step"><b>Preuzmite</b><p>Lično u Kragujevcu ili dostavom. Svaki komad je ručno pravljen baš za vas.</p></div>
+    </div>
+    <div class="notes">
+      <span class="script">Važne napomene</span>
+      <ul>
+        <li>Boja materijala može malo da se razlikuje od boje kapice sa fotografije, ukoliko je taj materijal potrošen.</li>
+        <li>Mogu da pokušam da pogodim nijansu sa vaše fotografije, ali ne mogu da garantujem da ću imati istu.</li>
+        <li>Svaka kapica ima lastiš koji ide ispod brade. Ako želite traku od materijala za vezivanje, doplata je 100 din.</li>
+        <li>Manje kapice za igračke koštaju isto kao standardne.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="script">Pitanja</span><h2>Česta pitanja</h2></div>
+    <div class="faq">
+      <details open><summary>Koja je razlika između modela kapica?</summary><p>Klasična kapica ima pamučni karner širine oko 2 cm. Kapica sa velikim karnerom ima gusto nabran karner od pamuka, tila ili muslina širine oko 4 cm. Kapica sa dodacima ima ime, broj ili oblike od tekstilne folije, ili osnovu presvučenu tilom. Kod kapice sa štampanim dezenom dezen zajedno osmišljavamo i štampam ga na krem pamuku.</p></details>
+      <details><summary>Da li mogu da naručim kapicu i za lutku ili medu?</summary><p>Da. Manje kapice za igračke koštaju isto kao standardne, a postoji i set kapice i kragnice za medu (3.500 din). Kapice za lutke dolaze i u setovima od pet.</p></details>
+      <details><summary>Da li mogu da uskladim kapicu sa toperima i girlandom?</summary><p>Da. Kapica sa štampanim dezenom može da bude u istoj temi kao girlanda i toperi. Set topera, girlande i kapice sa štampanim dezenom košta 5.000 din.</p></details>
+      <details><summary>Kako se peru šolje?</summary><p>Bubulu šolje smeju u mašinu za sudove. Zapremina je 180 ml, taman za male ručice i toplo mleko, ili za maminu kafu.</p></details>
+      <details><summary>Gde mogu da preuzmem porudžbinu?</summary><p>Lično preuzimanje je moguće u Kragujevcu, a porudžbine šaljemo i dostavom.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="flogo" href="index.html"><img src="img/logo-bubulu.png" alt="Bubulu"></a>
+        <p style="margin-top:18px;font-size:14px;max-width:32ch;opacity:.85">Ručno pravljene kapice, krunice i čarobni štapići za mađioničare, vile, prinčeve i princeze.</p></div>
+      <div><h4>Prodavnica</h4><ul><li><a href="kapica.html">Kapice</a></li><li><a href="#proslava">Toperi i girlande</a></li><li><a href="#proslava">Platna</a></li><li><a href="#solje">Šolje</a></li></ul></div>
+      <div><h4>Pomoć</h4><ul><li><a href="#porucivanje">Kako poručiti</a></li><li><a href="#porucivanje">Važne napomene</a></li><li><a href="#proslava">Cene</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="https://www.instagram.com/bubulu___/" target="_blank" rel="noopener">Instagram @bubulu___</a></li><li><a href="https://www.instagram.com/bubulu___/" target="_blank" rel="noopener">Pišite nam u DM</a></li><li>Kragujevac</li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Bubulu. Sva prava zadržana.</span><span>Za vaše divne dane ✦</span></div>
+  </div>
+</footer>
+</body>
+</html>
