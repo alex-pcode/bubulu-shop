@@ -178,6 +178,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:22px;displa
   .logo{align-items:flex-start}
   .logo img{height:38px}
   .hero .wrap,.split{grid-template-columns:1fr;gap:44px}
+  /* hero-first: image leads on mobile */ .hero-art{order:-1}
   .hero{padding-top:28px}
   .hero-art{order:-1;padding:0 0 44px 44px;max-width:520px}
   .hero-art .note{right:0;top:20px}
@@ -202,6 +203,8 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:22px;displa
   .list li{font-size:14px}
   footer .cols{grid-template-columns:1fr}
 }
+.mobile-nav{display:none}
+@media (max-width:860px){.menu-btn{display:grid}header.site.menu-open .mobile-nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px -18px rgba(0,0,0,.35)}.mobile-nav a{padding:13px 0;font-size:17px;border-bottom:1px solid var(--line)}.mobile-nav a:last-child{border-bottom:0}}
 </style>
 </head>
 <body>
@@ -219,7 +222,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:22px;displa
     <div class="icons">
       <nav class="main" aria-label="Pomoć"><a href="#utisci">Utisci</a><a href="#porucivanje">Kako poručiti</a></nav>
       <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge">0</span></a>
-      <button class="icon-btn menu-btn" aria-label="Meni" style="background:none;border:0"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <button class="icon-btn menu-btn" aria-label="Meni" aria-expanded="false" style="background:none;border:0"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
 </header>
@@ -423,5 +426,14 @@ footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:22px;displa
     <div class="legal"><span>© 2026 Bubulu. Sva prava zadržana.</span><span>Za vaše divne dane ✦</span></div>
   </div>
 </footer>
+<script>
+/* mobile menu: collects the header's nav links into one dropdown */
+(function(){var h=document.querySelector('header.site'),b=h&&h.querySelector('.menu-btn');if(!b)return;
+var p=document.createElement('nav');p.className='mobile-nav';p.setAttribute('aria-label','Meni');
+h.querySelectorAll('nav.main a').forEach(function(a){var c=a.cloneNode(true);c.removeAttribute('class');p.appendChild(c)});
+p.style.background=getComputedStyle(document.body).backgroundColor;h.appendChild(p);
+b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+p.addEventListener('click',function(e){if(e.target.closest('a')){h.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});})();
+</script>
 </body>
 </html>
